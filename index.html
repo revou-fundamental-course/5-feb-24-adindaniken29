@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="navigation-bar">
+        <img id="logo" src="assets/logo.png" alt="Logo">
+        <h2 class="judul">Kalkulator Konversi Suhu</h2>
+        <nav id="navigation">
+            <a href="">Halaman Utama</a>
+            <a href="">Rumus</a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div id="input-section">
+            <p>Masukkan suhu derajat Celcius (°C) ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F)</p>
+            <label for="input-field">Celcius °C</label>
+            <input type="number" name="input-field" id="input-field" placeholder="Masukkan Angka">
+        </div>
+        <button class="my-button" onclick="calculate()">Konversi</button>
+        <button class="my-button" onclick="reset()">Reset</button>
+        <button class="my-button" onclick="reverse()">Reverse</button>
+        <div id="output-section">
+            <label for="output-field">Hasil Fahrenheit °F</label>
+            <input readonly type="number" name="output-field" id="output-field">
+        </div>
+        <div id="output-hasil">
+            <label for="output-kalkulasi">Cara Kalkulasi</label>
+            <textarea readonly type="number" name="output-kalkulasi" id="output-kalkulasi" cols="144" rows="2"></textarea>
+        </div>
+        <div id="calcRumus">
+            <h2 class="title-rumus">Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+            <pre class="lihat-rumus">S<sub>(&deg;C)</sub> = (S<sub>(&deg;C)</sub> x 9/5 ) + 32&deg;F</pre>
+            <h3 class="atau">atau</h3>
+            <pre class="lihat-rumus">S<sub>(&deg;C)</sub> = (S<sub>(&deg;C)</sub> x 1.8 ) + 32&deg;F</pre>
+        </div>
+    </div>
+</body>
+</html>
